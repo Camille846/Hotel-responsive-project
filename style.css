@@ -1,0 +1,293 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    
+}
+
+.clearfix::after, .row::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.header-logo{
+    display: block;
+    text-align: center;
+    margin: .5em;
+}
+
+
+.menu{
+    background:  #612674;
+    text-align: center;
+}
+
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    display: block;
+}
+
+.menu a:hover{
+    background: #7c3792;
+}
+
+h1, h2, h3,h4{
+    font-family: "Oxygen";
+    color:#612674;   
+}
+
+.top-content{
+    text-align: center;
+    margin:0;
+    padding: 1em;
+}
+
+.icon-play{
+    height: 5em;
+    display: none;
+}
+
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2{
+    color:#a87bb7;
+    font-size: 1em;
+}
+
+
+.top-content a{
+    text-decoration: none;
+    font-family: "Oxygen";
+}
+
+
+.button{
+    background: #49bf9d;
+    color:white;
+    display: inline-block;
+    border: 1px solid #49bf9d;
+    border-radius: 5px;
+    padding: .80em 3em;
+    font-size: 1em;
+    margin: .5em;
+}
+
+.top-content a:hover{ /*errado*/
+    background: rgba(44, 121, 100, 0.932);
+    border: 1px solid rgba(44, 121, 100, 0.932);
+    display: inline-block;
+    padding: .80em 3em;
+}
+
+.middle-content span[class^=icon]{
+    font-size: 3.5em;
+    color: #652e78;
+}
+
+.col-1-5{
+    text-align: center;
+}
+    
+.material-icons{
+    font-size: 4em;
+    color:#652e78;
+}
+
+h3{
+    text-transform: uppercase;
+}
+.midle-content{
+    margin:0;
+    background:#f6f6f6;
+
+}
+.col-1-5 p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color:#222;
+    
+}
+
+.experiences{
+    padding: 2em;
+}
+
+.experiences article{
+    margin-bottom: 3.5em;
+}
+
+.experiences h4{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: normal;
+}
+
+.experiences h5{
+    text-align: center;
+    letter-spacing: .1em;
+}
+.experiences p{
+    text-align:center;
+    line-height: 1.5;
+}
+
+.experiences-button{
+    text-align: center;
+    font-size: 1.25em;
+}
+.experiences-button a{
+    text-decoration: none;
+    font-family: "Oxygen";
+}
+
+.experiences-button a:hover{ /*errado*/
+    background: rgba(44, 121, 100, 0.932);
+    border: 1px solid rgba(44, 121, 100, 0.932);
+    display: inline-block;
+    padding: .80em 3em;
+}
+
+.maps{
+    text-align: center;
+}
+
+.footer-content{
+    background: rgb(37, 48, 62);
+    color:#83969f;
+    text-align: center;
+    padding-bottom: 2em;
+    display: block;
+
+}
+
+
+.footer-menushare{
+    background: rgb(48, 61, 76);
+    padding:.5em;
+    
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+    list-style: none;
+}
+
+.footer-menushare a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.1em;    
+}
+
+.icon-facebook{
+    font-size: 1.4em;
+}
+
+@media screen and (min-width:48em) {
+   
+    .header-logo{
+        float: left;
+    }
+
+    .menu{
+        float: right;
+        background: transparent;
+        margin-top: 1.5625rem;
+    }
+
+    .menu ul{
+        margin:0;
+        padding:0;
+    }
+    .menu a{
+        color:#713a84;
+    }
+
+    .menu a:hover{
+        background: #e7d9fc;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+    .icon-play{
+        display: block;
+    }
+
+    .top-content{
+    background: #521a66;
+    margin-top: 0;
+    padding:0;
+    }
+
+    h1,h2{
+        color:white;
+    }
+
+    .col-1-5{
+        float: left;
+        width: 14%;
+        margin: 3%;
+    }
+}
+
+@media screen and (min-width:62.5em) {
+    .top-content{
+        background: #521a66 url(/Projeto\ responsivo/images/bg_topo_1198x670.jpg);
+        background-position: center;
+        height: 20em;
+        padding:10em 1em 1em;
+    }
+}
+
+@media screen and (min-width:74em) {
+    .top-content{
+        background:  #521a66 url(/Projeto\ responsivo/images/bg_topo_1600x1374.jpg);
+        padding: 19em 20em 1em;
+        background-position: center;
+    }
+
+    .icon-play{
+        height: 7em;
+    }
+
+    .col-1-4{
+        width: 23%;
+        margin: 1%;
+    }
+
+    .experiences{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1em;
+        padding: 10px;
+
+    }
+    .grid-item{
+        text-align: center; 
+    }
+
+
+
+
+}
