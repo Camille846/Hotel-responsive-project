@@ -253,7 +253,9 @@ h3{
 
 @media screen and (min-width:62.5em) {
     .top-content{
-        background: #521a66 url(/Projeto\ responsivo/images/bg_topo_1198x670.jpg);
+        background: #521a66 url(images/bg_topo_1198x670.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
         height: 20em;
         padding:10em 1em 1em;
@@ -262,7 +264,9 @@ h3{
 
 @media screen and (min-width:74em) {
     .top-content{
-        background:  #521a66 url(/Projeto\ responsivo/images/bg_topo_1600x1374.jpg);
+        background:  #521a66 url(images/bg_topo_1600x1374.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 19em 20em 1em;
         background-position: center;
     }
